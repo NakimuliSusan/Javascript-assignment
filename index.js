@@ -14,7 +14,7 @@ for (let i = 0; i <= 100; i++) {
 
 // 2. Write a JavaScript program to sum the multiples of 3 and 5 under 1000.
 
-sum = 0;
+let sum = 0;
 for (var p = 0; p < 1000; p++) {
   if ([p] % 3 === 0 && [p] % 5 === 0) {
     sum += p;
@@ -44,10 +44,10 @@ for (let z= 0; z <= 20; z++) {
 // Let num = [-2, 4,-5, 6,0]
 
 num = [-2,4,-5,6,0];
-biggest = 0;
+let biggest = 0;
 for (let i = 0; i < num.length; i++) {
     if (num[i] > biggest) {
-        var biggest = num[i];
+       biggest = num[i];
     }
 }
 console.log(biggest);
