@@ -53,6 +53,9 @@ class Mkulima {
       currentproduct.productId = newproductId;
       currentproduct.price = newprice;
     }
+    this.getProduct = (Id) => {
+      console.log(this.products.find(item => item.productId === Id));
+    };
      this.printProducts = () => {
       console.log(this.products)
      }
@@ -82,6 +85,7 @@ farm.addProduct("6789","Chicken", 1200)
 farm.removeProduct("6789")
 farm.updateProduct("1234","3214","Onions", 120)
 farm.addProduct("2581","Potatoes", 145)
+farm.getProduct("45678")
 farm.printProducts();
 console.log(farm.calculateOrderCost("2581", 5));
 console.log(farm.calculateOrderCost("3214", 10));
